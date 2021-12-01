@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Page</title>
+</head>
+<body data-spy="scroll" data-target="navbarGhost" data-offset="0">
+
+    <!-- NavBar -->
+    <section id="navbarGhost">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Ghost Mechanic</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href=" https://floating-ridge-60276.herokuapp.com/index.html">קצת עלינו <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href=" https://floating-ridge-60276.herokuapp.com/index.html">שירותים</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href=" https://floating-ridge-60276.herokuapp.com/addsubscribe.html">צור קשר</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+</section>
+
+
+        <!-- subscribe -->
+        <section id="subscribe">
+          <div class="dark-overlay">
+            <div class="subscribe-inner container">
+              <div class="row">
+                <div class="col-md-8"></div>
+                <div class="col-md-4">
+                  <div class="card bg-dark text-center card-form py-5">
+                    <div class="card-body">
+                      <h3 class="py-2 text-white">השאר פרטים ונחזור אלייך</h3>
+                      <p class="py-1 text-white">או התקשר בתחתית העמוד</p>
+                      <form action="/post-details" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-lg" placeholder="שם" name="name" id="name">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control form-control-lg" placeholder='דו"אל'  name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                          <input type="number" class="form-control form-control-lg" placeholder="נייד"  name="phone" id="phone">
+                        </div>
+                        <div class="form-group">
+                          <label for="newsletter" class="text-white">מעוניין בקבלת עדכונים ומבצעים</label>
+                          <input type="checkbox" id="newsletter" name="newsletter">
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+                      </form>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>   
+
+            <!-- contact us -->
+            <section id="contact-details">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container py-5 mt-5">
+                            <h1 class="text-center">צור קשר</h1>
+                            <table class="table table-striped table-dark">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">שם</th>
+                                    <th scope="col">תפקיד</th>
+                                    <th scope="col">מס' טלפון</th>
+                                    <th scope="col">אימייל</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>ישראל</td>
+                                    <td>ישראלי</td>
+                                    <td>050-123-4567</td>
+                                    <th scope="col">test@test.com</th>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>ישראל</td>
+                                    <td>ישראלי</td>
+                                    <td>050-123-4567</td>
+                                    <th scope="col">test@test.com</th>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>ישראל</td>
+                                    <td>ישראל</td>
+                                    <td>050-123-4567</td>
+                                    <th scope="col">test@test.com</th>
+                                  </tr>
+                                </tbody>
+                              </table>
+                
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- FOOTER -->
+            <section id="main-footer" class="bg-dark">
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center py-4 text-white">
+                    <h6>Raz SpiderWeb</h6>
+                    <p>Copyright &copy; <span id="year"></span></p>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+
+
+    <script src="app.js"></script>
+    <script src="./responsiveJS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        // init scrollspy
+        $('body').scrollspy({ target: '#navbarGhost' });
+        // init auto copyright year
+        $("#year").text(new Date().getFullYear());
+    </script>
+    
+</body>
+</html>
